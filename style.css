@@ -1,9 +1,173 @@
 body {
-    display: flex;
+    line-height: 1.5;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(1.125rem, 2vw, 1,25rem);
+    /* display: flex; */
     min-height: 100vh;
     justify-content: center;
     align-items: center;
 }
+/* Billo / AOS = Animate On Scroll */
+.navbar {
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    background: -webkit-linear-gradient(#00e0fe, #1107fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    color: #20212c;
+}
+
+/* img {
+    width: 100%;
+} */
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(104, 184, 193, 0.7), rgba(0, 224, 254, 0.7));
+    z-index: -1;
+}
+
+.bg-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 14px 22px;
+    transition: all 0.3s ease;
+}
+
+.btn-main {
+    background: linear-gradient(to right,#00e0fe, #1107fe);
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btn:hover {
+    color: #68B8C1;
+    transform: translateY(-5px);
+}
+
+.video-btn {
+    width: 60px;
+    height:60px;
+    background: linear-gradient(to right,#00e0fe, #1107fe);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    border-radius: 100px;
+}
+
+.video-btn i {
+    font-size: 32px;
+}
+.review {
+    box-shadow: 0 12px 12px rgba(0,0,0,0.1);
+}
+.review .person {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    padding-bottom: 18px;
+}
+
+.review .person img {
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+}
+
+.review .stars {
+    color: orange;
+}
+/* Billo / AOS = Animate On Scroll END */
+
+
+/* Logo carousel */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap; 
+    position: relative;
+}
+.logos::before,
+.logos::after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+/* left/right fade */
+.logos::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+.logos::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+.logos:hover .logo-slide {
+    animation-play-state: paused;
+}
+.logo-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+    /* animation: 5s slide infinite linear; */
+}
+.logo-slide img {
+    height: 40px;
+    margin: 0 40px;
+}
+/* Logo carousel */
+
 
 .container {
     width: 680px;
