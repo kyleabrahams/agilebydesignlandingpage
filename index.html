@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type = "text/javascript" src="script.js"></script>
     <link type="text/css" rel="stylesheet" href="style.css"/>
     <link type="text/scss" rel="stylesheet" href="_variables.scss"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Parallax script -->
+    <script src="/parallax/parallax.js"></script>
     <!-- Scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- Billo / AOS = Animate On Scroll  -->
+    <!-- Billnone !important;!important;!important;OS = Animate On Scroll  -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="line-icons.css">
@@ -32,11 +33,14 @@
 <!-- <body style="background-color:#1c2841"> -->
     <body data-bs-spy="scroll" data-bs-target=".navbar">
 
+    <!-- Back to top button -->
+    <a id="back-to-top" href="#" class="z-3 btn btn-secondary btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
     <!--navbar-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" data-aos="fade-down" data-aos-delay="1600" data-aos-duration="800" data-aos-easing="ease-in">
+    <nav class="navbar position-absolute bg-light overflow-visible fixed-top navbar-expand-lg navbar-light" data-aos="fade-down" data-aos-delay="1600" data-aos-duration="600" data-aos-easing="ease-in">
         <div class="container">
             <!-- <a class="navbar-brand" href="#">UYA.</a> -->
-            <img src="img/UYA logo vector.svg" alt="">
+            <img height="50" width="auto" src="img/UYA logo vector blk.svg" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -69,169 +73,237 @@
             </div>
         </div>
     </nav>
-
+    
     <!--hero-->
-    <section id="home" class="bg-cover hero-section h-75" style="background-image: url(img/cover_1.jpg);">
-        <div class="overlay"></div>
-        <div class="container text-white text-center">
+    <div class="hero"></div>
+        <header id="home">
+            <div class="text-white text-center bg-dar" class="parallax-window"data-parallax="scroll" data-image-src="img/cover_primary.jpg">
+               <div class="container">
+                    <div class="row">
+                        <h1 class="display-1 fw-bold mt-5 pt-5 pb-1" data-aos="fade-in" data-aos-delay="600" data-aos-duration="1000">Overcome imposter syndrome land the career of your dreams<br>Unleash your awesome</h1> 
+                    </div>
+                <div class="row">
+                    <div class="parallax-window" \data-parallax="scroll">
+                        <div class="row gx-0 bg- pt-0">
+                            <div class="col bg- align-self-center">
+                                <div class="p-2 bg-">
+                                    <h4 class="fw-light pb-4 bg-" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1000">Stop settling for cheap clients & small web design projects that don't go anywhere. Instead, attract high-paying, profitable clients. Even if you are just starting web design. And even if you don't think you're "good enough".</h4> 
+                                    <button class="button fw-bold" data-aos="fade-in" data-aos-delay="1800" data-aos-duration="1000"><span>PLAY VIDEO</span></button>
+                                </div>
+                            </div>
+                            <div class="col d-sm-block" data-aos="fade-up" data-aos-delay="1600" data-aos-duration="1000">
+                                <div class="bordr bg-re"></div>
+                                <img class="mt-n1 bg-" width="auto" height="700" src="img/Nada-sharpie2.png" alt="Nada smiling holding a sharpie marker">
+                            </div>
+                            <div class="col align-self-center" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1000">
+                                <h1 class="p-2 fw-normal bg-" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1000">Overcome imposter syndrome<br> land the career of your dreams<br>Unleash your awesome</h1> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="row">
-                <h1 class="display-1 fw-bold py-4" data-aos="fade-in" data-aos-delay="600" data-aos-duration="1000">Overcome imposter syndrome
-                    land the career of your dreams Unleash your awesome</h1> 
+               </div>
             </div>
 
-            <div class="row">
-                <div class="col-4">
-                    <h3 class="fw-normal pb-4" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1000">Stop settling for cheap clients & small web design projects that don't go anywhere. Instead, attract high-paying, profitable clients. Even if you are just starting web design. And even if you don't think you're "good enough".</h3> 
-                    <button class="button fw-bold" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1000"><span>PLAY VIDEO</span></button>
-                </div>
-                <div class="col-4" data-aos="fade-up" data-aos-delay="1600" data-aos-duration="1000">
-                    <img width="auto" height="1200" src="img/Nada-sharpie.png" alt="Nada smiling holding a sharpie marker">
-                </div>
-                <div class="col">
-                    <h1 class="fw-normal" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1000">Overcome imposter syndrome<br>
-                        land the career of your dreams<br>Unleash your awesome</h1> 
- 
-                </div>
+        </header>
 
-                <div>
-                </div>
-            </div>
+                <!-- 3 col grid w/ padding example -->
+                <!-- <div class="container px-4">
+                    <div class="row gx-5">
+                      <div class="col">
+                       <div class="p-5 border bg-light">Custom column padding</div>
+                      </div>
+                      <div class="col">
+                        <div class="p-5 border bg-light">Custom column padding</div>
+                      </div>
+                      <div class="col">
+                        <div class="p-5 border bg-light">Custom column padding</div>
+                      </div>
+                    </div>
+                  </div> -->
 
-        </div>
-    </section>
 
     <!--reviews-->
-    <section id="reviews" class="text-center mt-n1" >
-        <div class="container">
-            <div class="row">
-                <div class="col-12 section-intro text-center">
-                    <h2>Recognized As One Of
-                        The Best Career Coaches In The Industry
-                    </h2>
-                    <div class="divider"></div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                        suffered<br>
-                        alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    </p>
-                </div>
-            </div>
-            <div class="row g-4 text-start">
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="review p-4">
-                        <div class="person">
-                            <img src="img/Cara.webp" alt="">
-                            <div class="text ms-3">
-                                <h6 class="mb-0">Cara (USA)</h6>
-                                <small>CEO at Ready Reset Go
-                                </small>
-                            </div>
-                        </div>
-                        <p class="pt-4">“Thank you Nada for your insights and
-                            consulting. We are very excited about
-                            our certification program and know
-                            it will be top-notch because of
-                            your help.”</p>
-                        <div class="stars">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                        </div>
+        <section id="reviews" class="bg-light text-center mt-n1" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 section-intro text-center">
+                        <h2>Recognized As One Of
+                            The Best Career Coaches In The Industry
+                        </h2>
+                        <div class="divider"></div>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered<br>
+                            alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        </p>
                     </div>
                 </div>
+                <div class="row g-4 text-start">
+                    <div class="col-md-4" data-aos="fade-up" alt="Cara">
+                        <div class="review p-4">
+                            <div class="person">
+                                <img src="img/Cara.webp" alt="">
+                                <div class="text ms-3">
+                                    <h6 class="mb-0">Cara (USA)</h6>
+                                    <small>CEO at Ready Reset Go
+                                    </small>
+                                </div>
+                            </div>
+                            <p class="pt-4">“Thank you Nada for your insights and
+                                consulting. We are very excited about
+                                our certification program and know
+                                it will be top-notch because of
+                                your help.”</p>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="review p-4">
-                        <div class="person">
-                            <img src="img/avatar_2.jpg" alt="">
-                            <div class="text ms-3">
-                                <h6 class="mb-0">George (USA)</h6>
-                                <small>Product Owner, American Express</small>
+                    <div class="col-md-4" data-aos="fade-up" alt="George">
+                        <div class="review p-4">
+                            <div class="person">
+                                <img src="img/avatar_2.jpg" alt="">
+                                <div class="text ms-3">
+                                    <h6 class="mb-0">George (USA)</h6>
+                                    <small>Product Owner, American Express</small>
+                                </div>
+                            </div>
+                            <p class="pt-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
                             </div>
                         </div>
-                        <p class="pt-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
-                        <div class="stars">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <!-- <i class='bx bxs-star'></i> -->
-                        </div>
                     </div>
-                </div>
-
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="review p-4">
-                        <div class="person">
-                            <img src="img/tanya.webp" alt="">
-                            <div class="text ms-3">
-                                <h6 class="mb-0">Tanya</h6>
-                                <small>Global Education Events Specialist at Scrum Alliance</small>
+                
+                    <div class="col-md-4" data-aos="fade-up" alt="Tanya">
+                        <div class="review p-4">
+                            <div class="person">
+                                <img src="img/tanya.webp" alt="">
+                                <div class="text ms-3">
+                                    <h6 class="mb-0">Tanya</h6>
+                                    <small>Global Education Events Specialist at Scrum Alliance</small>
+                                </div>
+                            </div>
+                            <p class="pt-4">“Not only was it a pleasure to work with Nada during preparations leading up to the event, but I was also impressed with her commitment to our community.”</p>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
                             </div>
                         </div>
-                        <p class="pt-4">“Not only was it a pleasure to work with Nada during preparations leading up to the event, but I was also impressed with her commitment to our community.”</p>
-                        <div class="stars">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                        </div>
                     </div>
+        
                 </div>
         </section>
 
         <!-- Logo carousel -->
-        <section id="logos">
-            <div class="p-2">
-                <h4 style="text-align: center;">CERTIFIED MASTER CAREER COACH WITH 15+ YEARS OF EXPERIENCE AT:</h4>
+    <section id="logos" class="bg-white">
+        <div class="p-2">
+            <h4 style="text-align: center;">CERTIFIED MASTER CAREER COACH WITH 15+ YEARS OF EXPERIENCE AT:</h4>
+        </div>
+        <div class="logos">
+            <div class="logo-slide">
+                <img src="./logos/Deloitte.svg" alt="">
+                <img src="./logos/Accenture.svg" alt="">
+                <img src="./logos/RBC.svg" alt="">
+                <img src="./logos/Slalom.svg" alt="">
+                <img src="./logos/Honeywell.svg" alt="">
+                <img src="./logos/TD bank.svg" alt="">
             </div>
-            <div class="logos">
-                <div class="logo-slide">
-                    <img src="./logos/Deloitte.svg" alt="">
-                    <img src="./logos/Accenture.svg" alt="">
-                    <img src="./logos/RBC.svg" alt="">
-                    <img src="./logos/Slalom.svg" alt="">
-                    <img src="./logos/Honeywell.svg" alt="">
-                    <img src="./logos/TD bank.svg" alt="">
-                </div>
-                <div class="logo-slide">
-                    <img src="./logos/Deloitte.svg" alt="">
-                    <img src="./logos/Accenture.svg" alt="">
-                    <img src="./logos/RBC.svg" alt="">
-                    <img src="./logos/Slalom.svg" alt="">
-                    <img src="./logos/Honeywell.svg" alt="">
-                    <img src="./logos/TD bank.svg" alt="">
-                </div>
+            <div class="logo-slide">
+                <img src="./logos/Deloitte.svg" alt="">
+                <img src="./logos/Accenture.svg" alt="">
+                <img src="./logos/RBC.svg" alt="">
+                <img src="./logos/Slalom.svg" alt="">
+                <img src="./logos/Honeywell.svg" alt="">
+                <img src="./logos/TD bank.svg" alt="">
             </div>
-                <!-- <script>
-                    var copy = document.querySelector(".logos-slide").cloneNode(true);
-                    document.querySelector('.logos').appendChild(copy);
-                </script> -->
-        </section>
-        <!-- Logo carousel -->
+        </div>
+            <!-- <script>
+                var copy = document.querySelector(".logos-slide").cloneNode(true);
+                document.querySelector('.logos').appendChild(copy);
+            </script> -->
+    </section>
+        <!-- Logo carousel end -->
 
         <!-- Animated input field -->
-        <!-- <section id="input-field">
-            <div class="section-ani-field" style="background-color:#1c2841">
+        <!-- <section id="input-field" style="background-color:#1c2841">
+            <div class="section-ani-field">
                 <div class="container">
                 <div class="entryarea">
                     <input type="text" required>
                     <div class="labelline">Enter your name</div>
                 </div>
             </div>
+            <style>
+                .entryarea {
+                    position: relative;
+                    height: 80px;
+                    line-height: 80px;
+                }
+
+                input {
+                    position: absolute;
+                    width: 100%;
+                    outline: none;
+                    font-size: 2.2em;
+                    padding: 0 30px;
+                    line-height: 80px;
+                    border-radius: 10px;
+                    border: 2px solid #f0ffff;
+                    background: transparent;
+                    transition: 0.1s ease;
+                    z-index: 1111;
+                }
+
+                .labelline {
+                    position: absolute;
+                    font-size: 1.6em;
+                    color: #f0ffff;
+                    padding: 0 25px;
+                    background-color: #1c2841;
+                    transition: 0.2s ease;
+                }
+
+                input:focus,
+                input:valid {
+                    color: #66ff00;
+                    border: 4px solid #66ff00;
+                }
+
+                input:focus + .labelline,
+                input:valid + .labelline {
+                    color: #66ff00;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 12px;
+                    transform: translate(5px, -16px) scale(0.88);
+                    z-index: 1111;
+                }
+            </style>
         </section> -->
-        <section>
-            <div class="fa-3x bg-light" >
-                <i class="fa-solid fa-circle-plus fa-beat"></i>
-                <i class="fa-solid fa-heart fa-beat"></i>
-                <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s;"></i>
-                <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 2s;"></i>
-                <i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;"></i>
-              </div>
-        </section>
+
+
+    <!-- <section class="bg-light">
+        <div class="fa-3x" >
+            <i class="fa-solid fa-circle-plus fa-beat"></i>
+            <i class="fa-solid fa-heart fa-beat"></i>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s;"></i>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 2s;"></i>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;"></i>
+            </div>
+    </section> -->
+
     </div>
 
 
