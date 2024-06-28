@@ -1,28 +1,71 @@
 @charset "UTF-8";
+.sweetsp {
+  font-family: "SweetSuckerPunch";
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.counter {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.employees, .customer, .design, .order {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.counter-count {
+  font-family: "SweetSuckerPunch";
+  font-size: 96px;
+  background-color: rgba(0, 177, 231, 0);
+  border-radius: 50%;
+  position: relative;
+  color: #FF7A00;
+  text-align: center;
+  line-height: 84px;
+  width: 84px;
+  height: 84px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: inline-block;
+}
+
+.employee-p, .customer-p, .order-p, .design-p {
+  font-size: 24px;
+  color: #000000;
+  line-height: 34px;
+}
+
 header {
-  background: none;
+  text-align: center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background: rgb(255, 255, 255);
 }
 header button {
-  background: white;
-  color: #68b8c1;
+  background: #FF7A00;
+  color: white;
 }
 header button:hover {
-  background: #68b8c1;
+  background: #FF7A00;
 }
 .review {
   background: none;
 }
 .review button {
-  background: #68b8c1;
+  background: #FF7A00;
   color: white;
 }
 .review button:hover {
   background: white;
-  color: #68b8c1;
-  border-color: #68b8c1;
+  color: #FF7A00;
+  border-color: #FF7A00;
 }
 .review button:hover:hover span {
-  color: #68b8c1;
+  color: #FF7A00;
 }
 .review span {
   color: white;
@@ -48,26 +91,22 @@ header button:hover {
   -webkit-text-fill-color: transparent;
 }
 
+.nav-link {
+  color: #fff;
+}
+
 a {
+  font-family: "Switzer", sans-serif;
+  font-size: 19px;
   text-decoration: none;
   transition: all 0.4s ease;
-  font-weight: 800;
-  color: #20212c;
+  font-weight: 600;
+  color: white;
 }
 
 h1 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "SweetSuckerPunch";
   font-weight: 700;
-}
-
-.hero {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  transform-style: preserve-3d;
-  z-index: -1;
 }
 
 .row {
@@ -225,7 +264,7 @@ section {
 }
 
 .logo-slide img {
-  height: 40px;
+  height: 30px;
   margin: 0 40px;
 }
 

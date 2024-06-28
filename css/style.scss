@@ -1,13 +1,59 @@
-$primaryBrn: #68b8c1;
+$primaryBrn: #FF7A00;
 // $primaryBrn: #c18a68;
 
+.sweetsp {
+    font-family: "SweetSuckerPunch";
+    font-size: 6rem;
+    font-weight: 500;   
+}
+
+// Counter animation
+.counter
+{
+    background-color: #ffffff;
+    text-align: center;
+}
+.employees,.customer,.design,.order
+{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.counter-count
+{
+    font-family: "SweetSuckerPunch";
+    font-size: 96px;
+    background-color: #00b1e700;
+    border-radius: 50%;
+    position: relative;
+    color: $primaryBrn;
+    text-align: center;
+    line-height: 84px;
+    width: 84px;
+    height: 84px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+
+.employee-p,.customer-p,.order-p,.design-p
+{
+    font-size: 24px;
+    color: #000000;
+    line-height: 34px;
+}
+// Counter animation END
+
+
 header {
-    padding-top: 20rem;
-    padding-bottom: 12.5rem;
-    background: none;
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background: rgb(255, 255, 255);
         button {
-            background: white;
-            color: $primaryBrn;
+            background: $primaryBrn;
+            color: white;
             &:hover {
                background: $primaryBrn;
             }
@@ -61,14 +107,16 @@ header {
 }
 
 a {
+    font-family: 'Switzer', sans-serif;
+    font-size: 19px;
     text-decoration: none;
     transition: all 0.4s ease;
-    font-weight: 800;
-    color: #20212c;
+    font-weight: 600;
+    color: white;
 } 
 
 h1 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "SweetSuckerPunch";
     font-weight: 700;
 }
 
@@ -121,6 +169,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     display: block;
+
 }
 
 .button:hover {
@@ -219,7 +268,7 @@ section {
     /* animation: 5s slide infinite linear; */
 }
 .logo-slide img {
-    height: 40px;
+    height: 30px;
     margin: 0 40px;
 }
 /* Logo carousel end */
